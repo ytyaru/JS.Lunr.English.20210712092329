@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
     <meta charset="utf-8">
     <title>Lunrで英語を全文検索してみる。</title>
-    <script src="./main.js" type="module"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--
+    <script src="./lib/require/require.2.3.6.min.js"></script>
+    <script src="./lib/lunr/lunr.2.3.9.min.js"></script>
+    <script src="./lib/lunr/languages/lunr.stemmer.support.min.js"></script>
+    <script src="./lib/lunr/languages/lunr.multi.min.js"></script>
+    <script src="./lib/lunr/languages/lunr.ja.min.js"></script>
+    <script src="main.js"></script>
+    -->
+    <script data-main="main.js" src="./lib/require/require.2.3.6.min.js"></script>
 </head>
 <body>
-<h1><a href="https://github.com/ytyaru/JS.Lunr.English.20210712092329">Lunrで英語を全文検索してみる。</a></h1>
+    <input type="search" value="タイトル"></input>
+    <section id="SearchResult"></section>
 </body>
 </html>
