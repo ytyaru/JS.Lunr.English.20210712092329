@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lunrで英語を全文検索してみる。</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script data-main="main.js" src="./lib/require/require.2.3.6.min.js"></script>
+</head>
+<body>
+    <input type="search" value="タイトル"></input>
+    <section id="SearchResult"></section>
+    <a href="https://tbsmcd.net/post/added_search/"><code>this.use(lunr.multiLanguage('en', 'ja'));</code>は日本語が有効にならない。</a>
+    <br><small><code>this.use(lunr.ja);</code>と<code>result = idx.search(`*${keyword}*`);</code>で部分一致検索にすることでムリヤリ英語混在でも検索できるようにした。</small>
+</body>
+</html>
